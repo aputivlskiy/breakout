@@ -40,8 +40,8 @@ require([
         //
 
         //set one of the renderers
-        renderer = CanvasDrawRenderer;
-        //renderer = DomRenderer;
+        //renderer = CanvasDrawRenderer;
+        renderer = DomRenderer;
 
 
         setupPage();
