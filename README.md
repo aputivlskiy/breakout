@@ -24,16 +24,16 @@ http://igrys.com/breakout/test/runner.html
 Details
 --------
 Single player BREAKOUT-like game that runs on a tablet (e.g. iPad or Kindle 
-Fire). The game should have the following features: 
+Fire). The game has following features: 
 * You start with 3 lives 
-* The game consists of 3 levels (levels should be generated, not scripted) 
-* There should be between 50 and 100 stones in each level 
+* The game consists of 3 generated levels
+* There are between 50 and 100 stones in each level 
 * There are 3 kinds of stones: 
-** 1 hit breaks them 
-** 2 hits breaks them 
-** Unbreakable 
+  * 1 hit breaks them 
+  * 2 hits breaks them 
+  * Unbreakable 
 * 5% of the stones have a reward 
-** Bigger Pad 
-** Smaller Pad 
-** Faster Ball 
-** Slower Ball
+  * Bigger Pad 
+  * Smaller Pad 
+  * Faster Ball 
+  * Slower Ball
