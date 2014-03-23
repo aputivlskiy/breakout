@@ -1,0 +1,66 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Breakout</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<div id="gameContainer" style="float:left"></div>
+        <div id="debug" style="position: absolute;top:0px;float:right"></div>
+
+
+        <!-- dom screens -->
+        <div style="display:none">
+
+            <!-- menu screen -->
+            <div id="domMenu">
+                <h1>Breakout Game</h1>
+                <h3>(DOM renderer. edit main.js to use canvas renderer)</h3>
+                <a href="#" class="startLink">Click to start</a>
+            </div>
+
+            <!-- result screen -->
+            <div id="domResult">
+                <h1></h1>
+                <a href="#" class="startLink">Click to play again</a>
+            </div>
+
+            <!-- game screen -->
+            <div id="domGame">
+                <ul class="hud">
+                    <li class="lives"></li>
+                    <li class="level"></li>
+                </ul>
+                <div class="btn right"></div>
+                <div class="btn left"></div>
+            </div>
+
+        </div>
+
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="libs/require.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

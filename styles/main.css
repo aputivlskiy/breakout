@@ -1,0 +1,160 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border: 0;
+	overflow: hidden; /*  Disable scrollbars */
+	display: block;  /* No floating content on sides */
+}
+		
+body {
+    background: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #CCC;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+#gameContainer {
+    text-align: center;
+}
+
+
+#stage {
+	margin:auto;
+    padding: 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    border:1px solid #999;
+}
+
+
+/*----- DOM renderer -----*/
+#domStage {
+    position: relative;
+    background-color: #101010;
+    border:1px solid #999;
+    font-size: 1em;
+    font-family: Arial, Verdana, sans-serif;
+
+}
+
+#domStage div {
+    text-align: center;
+}
+
+#domTouch {
+    position: absolute;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50,50,50,0);
+}
+
+
+#domStage .pad {
+    position: absolute;
+    background-color: #009900;
+    border:3px solid #00FF00;
+}
+
+#domStage .ball {
+    position: absolute;
+    background-color: #ccc;
+    border:2px solid #fff;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+}
+
+#domStage .brick {
+    position: absolute;
+    background-color: #cc6600;
+    border:2px solid #ff9900;
+}
+
+#domStage .brick.twohits {
+    background-color: #990000;
+    border-color: #cc0000;
+}
+
+#domStage .brick.unbreak {
+    background-color: #666666;
+    border-color: #999999;
+}
+
+#domMenu {
+    margin-top:200px;
+}
+
+#domMenu h1 {
+    font-size: 36pt;
+    color: #FF9900;
+}
+
+#domGame {
+
+}
+
+#domGame .btn {
+    position: absolute;
+    bottom:0px;
+    width:100px;
+    height:100px;
+    background-color: rgba(50,50,50,0.5);
+    border:2px solid rgba(127,127,127,0.5);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#domGame .btn.left {
+    left:0px;
+}
+
+#domGame .btn.right {
+    right:0px;
+}
+
+#domGame .hud ul {
+    margin:0;
+    padding: 0px;
+}
+
+#domGame .hud li {
+    display: inline-block;
+    margin: 0 50px;
+    padding: 0px;
+}
+
+
+#domResult {
+    text-align: center;
+}
+
+#domResult h1 {
+    font-size: 32pt;
+}
+
+#domResult h1.win {
+    color: #00cc00;
+}
+
+#domResult h1.lost {
+    color: #cc0000;
+}
+
+#domStage .startLink {
+    font-size: 14pt;
+    margin: 30px;
+}

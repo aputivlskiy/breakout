@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<title>Test Runner</title>
+
+	<!-- Include Jasmine -->
+	<link rel="stylesheet" type="text/css" href="libs/jasmine-1.3.0/jasmine.css"></link>
+	<script type="text/javascript" src="libs/jasmine-1.3.0/jasmine.js"></script>
+	<script type="text/javascript" src="libs/jasmine-1.3.0/jasmine-html.js"></script>
+
+	<script type="text/javascript">
+
+		<!-- Configure paths to game modules -->
+		var require = {
+			paths: {
+				"domReady": "../libs/domReady",
+				"app": "../scripts"
+			}
+		};
+
+	</script>
+	<script type="text/javascript" src="../libs/require.js"></script>
+
+	<script type="text/javascript">
+
+		require(
+			[
+				"domReady!",
+				"spec/bonuses.spec"
+			],
+			function( ){
+
+				//HTML reporting
+				jasmine.getEnv().addReporter(
+					new jasmine.HtmlReporter()
+				);
+
+				//run tests
+				jasmine.getEnv().execute();
+			}
+		);
+
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>
